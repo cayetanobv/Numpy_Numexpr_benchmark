@@ -7,11 +7,11 @@ https://github.com/pydata/numexpr
 
 
 ##Requeriments
-*Numpy
-*Numexpr
-*IPython
-*Line profiler
-*Memory profiler
+- Numpy
+- Numexpr
+- IPython
+- Line profiler
+- Memory profiler
 
 
 ##Results
@@ -21,13 +21,11 @@ Default ndarray size used in test is 25*10^6.
 This is a limited test because I have used only one ndarray size (large but only one).
 Under these conditions the result is that Numpy with Numexpr is more than six times faster than without it.
 
-Computer used in test:
-*AMD Athlon(tm) X4 750K Quad Core Processor
-*16 GB RAM
+Computer used in test: AMD Athlon(tm) X4 750K Quad Core Processor, 16 GB RAM
 
 
 ###Time
-1) Run script with Numexpr (inside IPython):
+- Run script with Numexpr (inside IPython):
 
 ```
 In [1]: %%timeit -n1
@@ -50,7 +48,7 @@ In [1]: %%timeit -n1
 ```
 
 
-2) Run script without Numexpr (inside IPython):
+- Run script without Numexpr (inside IPython):
 
 ```
 In [2]: %%timeit -n1
@@ -74,7 +72,7 @@ In [2]: %%timeit -n1
 
 ###Code profiling: testNumexpr() 
 
-Profiling function testNumexpr() with IPython %prun magic function:
+- Profiling function testNumexpr() with IPython %prun magic function:
 
 ```
 In [3]: %prun testNumexpr(5000)
@@ -108,7 +106,8 @@ Process completed successfully!
 
 ```
 
-Line profiling function testNumexpr() with IPython %lprun magic function (line_profiler library required):
+
+- Line profiling function testNumexpr() with IPython %lprun magic function (line_profiler library required):
 
 ```
 In [4]: %lprun -f testNumexpr testNumexpr(5000)
@@ -145,7 +144,8 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
     45         1           55     55.0      0.0      print "Process completed successfully!\n"
 ```
 
-Memory profiling function testNoNumexpr() with IPython %mprun magic function (memory_profiler library required):
+
+- Memory profiling function testNoNumexpr() with IPython %mprun magic function (memory_profiler library required):
 
 
 ```
@@ -182,7 +182,7 @@ Line #    Mem usage    Increment   Line Contents
 
 ###Code profiling: testNoNumexpr() 
 
-Profiling function testNoNumexpr() with IPython %prun magic function:
+- Profiling function testNoNumexpr() with IPython %prun magic function:
 
 ```
 In [6]: %prun testNoNumexpr(5000)
@@ -201,7 +201,8 @@ Process completed successfully!
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 ```
 
-Line profiling function testNoNumexpr() with IPython %lprun magic function (line_profiler library required):
+
+- Line profiling function testNoNumexpr() with IPython %lprun magic function (line_profiler library required):
 
 ```
 In [7]: %lprun -f testNoNumexpr testNoNumexpr(5000)
@@ -237,7 +238,8 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
     42         1           55     55.0      0.0      print "Process completed successfully!\n"
 ```
 
-Memory profiling function testNoNumexpr() with IPython %mprun magic function (memory_profiler library required):
+
+- Memory profiling function testNoNumexpr() with IPython %mprun magic function (memory_profiler library required):
 
 ```
 In [8]: %mprun -f testNoNumexpr testNoNumexpr(5000)
