@@ -12,6 +12,7 @@ https://github.com/pydata/numexpr
 - IPython
 - Line profiler
 - Memory profiler
+- Psutil (optional but highly recommended)
 
 
 ##Results
