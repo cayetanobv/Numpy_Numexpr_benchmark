@@ -20,7 +20,7 @@ https://github.com/pydata/numexpr
 All scripts are launched inside IPython.
 Default ndarray size used in test is 25*10^6.
 This is a limited test because I have used only one ndarray size (large but only one).
-Under these conditions the result is that Numpy with Numexpr is more than six times faster than without it.
+Under these conditions the result is that Numpy with Numexpr is more than seven times faster than without it.
 
 Computer used in test: AMD Athlon(tm) X4 750K Quad Core Processor, 16 GB RAM
 
