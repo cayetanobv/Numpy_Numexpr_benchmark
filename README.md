@@ -24,6 +24,8 @@ Under these conditions the result is that Numpy with Numexpr is more than seven 
 
 Computer used in test: AMD Athlon(tm) X4 750K Quad Core Processor, 16 GB RAM
 
+You can see [the notebook here](http://nbviewer.ipython.org/github/cayetanobv/Numpy_Numexpr_benchmark/blob/master/notebook/Numpy_Numexpr_benchmark.ipynb).
+
 
 ###Time
 - Run script with Numexpr (inside IPython):
