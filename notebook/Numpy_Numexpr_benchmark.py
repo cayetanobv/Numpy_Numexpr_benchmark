@@ -4,12 +4,12 @@
 # <codecell>
 
 %%timeit -n1
-%run /home/cayetano/Dropbox/documentos/python/GIS/Numpy_Numexpr_benchmark/test_numexpr.py
+%run Numpy_Numexpr_benchmark/test_numexpr.py
 
 # <codecell>
 
 %%timeit -n1
-%run /home/cayetano/Dropbox/documentos/python/GIS/Numpy_Numexpr_benchmark/test_nonumexpr.py
+%run Numpy_Numexpr_benchmark/test_nonumexpr.py
 
 # <codecell>
 
