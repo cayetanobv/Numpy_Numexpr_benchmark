@@ -55,9 +55,9 @@
 # 
 # - Profiling function testNumexpr() with IPython %prun magic function:
 
-# <rawcell>
+# <codecell>
 
-# %prun testNumexpr(5000)
+%prun testNumexpr(5000)
 
 # <markdowncell>
 
