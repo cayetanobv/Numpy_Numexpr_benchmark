@@ -250,7 +250,7 @@ Testing numpy without numexpr
 Starting computations...
 Process completed successfully!
 
-Filename: /home/cayetano/Dropbox/documentos/python/GIS/Numpy_Numexpr_benchmark/test_nonumexpr.py
+Filename: test_nonumexpr.py
 
 Line #    Mem usage    Increment   Line Contents
 ================================================
