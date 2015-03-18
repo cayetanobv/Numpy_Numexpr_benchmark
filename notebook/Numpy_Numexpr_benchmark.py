@@ -55,12 +55,13 @@
 # 
 # - Profiling function testNumexpr() with IPython %prun magic function:
 
-# <codecell>
-
-%prun testNumexpr(5000)
-
 # <rawcell>
 
+# %prun testNumexpr(5000)
+
+# <markdowncell>
+
+# ```   
 #    65 function calls in 1.340 seconds
 # 
 #    Ordered by: internal time
@@ -84,6 +85,7 @@
 #         6    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
 #         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 #         6    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+# ```
 
 # <markdowncell>
 
@@ -101,8 +103,9 @@
 
 %lprun -f testNumexpr testNumexpr(5000)
 
-# <rawcell>
+# <markdowncell>
 
+# ```
 # Timer unit: 1e-06 s
 # 
 # Total time: 1.33757 s
@@ -129,7 +132,7 @@
 #     42                                               
 #     43         1        89678  89678.0      6.7      ne.evaluate("a * b")
 #     44                                               
-#     45         1           55     55.0      0.0      print "Process completed successfully!\n"
+#     45         1           55     55.0      0.0      print "Process completed successfully!\n"```
 
 # <markdowncell>
 
@@ -139,8 +142,9 @@
 
 %mprun -f testNumexpr testNumexpr(5000)
 
-# <rawcell>
+# <markdowncell>
 
+# ```
 # Filename: test_numexpr.py
 # 
 # Line #    Mem usage    Increment   Line Contents
@@ -163,7 +167,7 @@
 #     42                                 
 #     43    793.2 MiB     -0.1 MiB       ne.evaluate("a * b")
 #     44                                 
-#     45    793.2 MiB      0.0 MiB       print "Process completed successfully!\n"
+#     45    793.2 MiB      0.0 MiB       print "Process completed successfully!\n"```
 
 # <markdowncell>
 
@@ -176,9 +180,10 @@
 
 %prun testNoNumexpr(5000)
 
-# <rawcell>
+# <markdowncell>
 
-#    5 function calls in 9.435 seconds
+# ``` 
+#   5 function calls in 9.435 seconds
 # 
 #    Ordered by: internal time
 # 
@@ -186,7 +191,7 @@
 #         1    8.613    8.613    9.430    9.430 test_nonumexpr.py:25(testNoNumexpr)
 #         2    0.817    0.409    0.817    0.409 {method 'random_sample' of 'mtrand.RandomState' objects}
 #         1    0.004    0.004    9.435    9.435 <string>:1(<module>)
-#         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+#         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}```
 
 # <markdowncell>
 
@@ -196,8 +201,9 @@
 
 %lprun -f testNumexpr testNoNumexpr(5000)
 
-# <rawcell>
+# <markdowncell>
 
+# ```
 # Timer unit: 1e-06 s
 # 
 # Total time: 9.447 s
@@ -224,7 +230,7 @@
 #     39                                               
 #     40         1       115940 115940.0      1.2      a * b
 #     41                                               
-#     42         1           55     55.0      0.0      print "Process completed successfully!\n"
+#     42         1           55     55.0      0.0      print "Process completed successfully!\n"```
 
 # <markdowncell>
 
@@ -235,8 +241,9 @@
 
 %mprun -f testNumexpr testNoNumexpr(5000)
 
-# <rawcell>
+# <markdowncell>
 
+# ```
 # Filename: test_nonumexpr.py
 # 
 # Line #    Mem usage    Increment   Line Contents
@@ -258,5 +265,5 @@
 #     39                                 
 #     40    793.3 MiB      0.0 MiB       a * b
 #     41                                 
-#     42    793.3 MiB      0.0 MiB       print "Process completed successfully!\n"
+#     42    793.3 MiB      0.0 MiB       print "Process completed successfully!\n"```
 
