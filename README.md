@@ -5,6 +5,6 @@ This a litle benchmark between Numpy with Numexpr and without Numexpr (and with/
 Numexpr is a fast numerical array expression evaluator for Python, NumPy, PyTables, pandas, bcolz and more:
 https://github.com/pydata/numexpr
 
-[Test 1. Numpy with Numexpr and without Numexpr]()
+[Test 1. Numpy with Numexpr and without Numexpr](https://github.com/cayetanobv/Numpy_Numexpr_benchmark/tree/master/test_numexpr)
 
-[Test 2. Numpy with Numexpr and without Numexpr with/without multiprocessing]()
+[Test 2. Numpy with Numexpr and without Numexpr with/without multiprocessing](https://github.com/cayetanobv/Numpy_Numexpr_benchmark/tree/master/test_numexpr_multiproc)
