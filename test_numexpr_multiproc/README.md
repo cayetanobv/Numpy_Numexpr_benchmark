@@ -9,6 +9,7 @@ https://github.com/pydata/numexpr
 ##Results
 TODO: write test results here...
 
+```
 In [1]: %%timeit -n1
    ...: %run testing_poolmultiprocessing_numexpr.py
    ...: 
@@ -374,8 +375,9 @@ In [1]: %%timeit -n1
 	Array size: 25000000
 
 1 loops, best of 3: 22.9 s per loop
+```
 
-
+```
 In [2]: %%timeit -n1
 %run /home/cayetano/Dropbox/documentos/python/GIS/Numpy_Numexpr_benchmark/test_numexpr_multiproc/testing_poolmultiprocessing.py
    ...: 
@@ -741,7 +743,6 @@ In [2]: %%timeit -n1
 	Array size: 25000000
 
 1 loops, best of 3: 1min 28s per loop
-
-
+```
 
 
