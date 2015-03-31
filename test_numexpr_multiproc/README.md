@@ -6,6 +6,15 @@ Numexpr is a fast numerical array expression evaluator for Python, NumPy, PyTabl
 https://github.com/pydata/numexpr
 
 
+##Requeriments
+- Numpy
+- Numexpr
+- IPython
+
+Computer used in test: AMD Athlon(tm) X4 750K Quad Core Processor, 16 GB RAM
+
+TODO: ipython notebooks, 
+
 ##Results
 
 ```
@@ -1110,4 +1119,371 @@ In [3]: %%timeit -n1
 	Array size: 25000000
 
 1 loops, best of 3: 40.8 s per loop
+```
+
+```
+In [4]: %%timeit -n1
+%run /home/cayetano/Dropbox/documentos/python/GIS/Numpy_Numexpr_benchmark/test_numexpr_multiproc/test_nopoolmultiprocessing.py
+   ...: 
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+	Creating random arrays - Pid: 8544
+	Starting computations... - Pid: 8544
+	Process completed successfully! - Pid: 8544
+	Array size: 25000000
+1 loops, best of 3: 4min 46s per loop
 ```
