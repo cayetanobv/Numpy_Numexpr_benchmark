@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+#
+#  Author: Cayetano Benavent, 2015.
+
+
+import numpy as np
+import os
+
+
+def randomArrays(n):
+    
+    arr1 = np.random.random((n,n))
+    arr2 = np.random.random((n,n))
+    
+    return arr1, arr2
+
+def launchComputation(n):
+    pid = os.getpid()
+    
+    print "\tCreating random arrays - Pid: %i" % (pid)
+    
+    arrlist = randomArrays(n)
+    
+    arr1 = arrlist[0]
+    arr2 = arrlist[1]
+        
+    print "\tStarting computations... - Pid: %i" % (pid)
+    
+     # Several computations for testing
+    a = np.sin(arr1) + arr1**3 + np.sqrt(arr2)
+    b = (arr1**3) * (arr2**3)
+    c = a * b
+    
+    sz = c.size
+    
+    print "\tProcess completed successfully! - Pid: %i\n\tArray size: %i" % (pid, sz)
+
+
+if __name__ == '__main__':
+
+    arrs_input = [5000] * 30
+
+    map(launchComputation, arrs_input)
+    
