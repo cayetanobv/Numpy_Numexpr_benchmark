@@ -13,12 +13,33 @@ https://github.com/pydata/numexpr
 
 Computer used in test: AMD Athlon(tm) X4 750K Quad Core Processor, 16 GB RAM
 
+Watermark IPython extension output:
+```
+In [1]: %install_ext https://raw.githubusercontent.com/rasbt/watermark/master/watermark.py
+
+In [2]: %load_ext watermark
+
+In [3]: %watermark
+02/04/2015 11:32:01
+
+CPython 2.7.6
+IPython 1.2.1
+
+compiler   : GCC 4.8.2
+system     : Linux
+release    : 3.13.0-48-generic
+machine    : x86_64
+processor  : x86_64
+CPU cores  : 4
+interpreter: 64bit
+```
+
 TODO: ipython notebooks, 
 
 ##Results
 
 ```
-In [1]: %%timeit -n1
+In [4]: %%timeit -n1
    ...: %run testing_poolmultiprocessing_numexpr.py
    ...: 
 	Creating random arrays - Pid: 8637
@@ -386,7 +407,7 @@ In [1]: %%timeit -n1
 ```
 
 ```
-In [2]: %%timeit -n1
+In [5]: %%timeit -n1
 %run testing_poolmultiprocessing.py
    ...: 
 	Creating random arrays - Pid: 8708
@@ -754,7 +775,7 @@ In [2]: %%timeit -n1
 ```
 
 ```
-In [3]: %%timeit -n1
+In [6]: %%timeit -n1
 %run test_nopoolmultiprocessing_numexpr.py
    ...: 
 	Creating random arrays - Pid: 8544
@@ -1122,7 +1143,7 @@ In [3]: %%timeit -n1
 ```
 
 ```
-In [4]: %%timeit -n1
+In [7]: %%timeit -n1
 %run /home/cayetano/Dropbox/documentos/python/GIS/Numpy_Numexpr_benchmark/test_numexpr_multiproc/test_nopoolmultiprocessing.py
    ...: 
 	Creating random arrays - Pid: 8544
